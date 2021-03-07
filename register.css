@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+:root{
+    --main-spacing : 0.1rem;
+    --main-white:#ffffff;
+    --main-black:#555;
+    --primary-color-1:rgb(90, 90, 255);
+    --shadow:rgba(90, 90, 255, 0.26);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2';
+}
+
+body{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img{
+    width: 30rem;
+    height: 30rem;
+}
+
+.header{
+    width: 100vw;
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.nav > .nav-item > .nav-link  {
+    font-family: 'Baloo 2';
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color:var(--main-black);
+    margin: 0 0.5rem;
+}
+
+.logo{
+    font-family: 'Baloo 2';
+    font-size: 2rem;
+    font-weight:bold;
+    text-transform:lowercase;
+    color:#666;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:max-content;
+    width:max-content;
+}
+
+.form-container .form-field{
+    padding: 1.5rem 2rem; 
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+    width: 20rem;
+    font-size: 1rem;
+    margin: 1rem;
+    background:var(--primary-color-1);
+    color:#ffffff;
+    transition: 0.5s;
+}
+.form-field:focus{
+    box-shadow: 10px 10px 15px  var(--shadow);
+}
+
+#submit-btn{
+    justify-self: center;
+    align-self: center;
+    width: 10rem;
+    height: 2.5rem;
+    background:var(--primary-color-1);
+    color:#ffffff;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+#submit-btn:hover{
+    box-shadow: 10px 10px 15px  var(--shadow);
+}
+
+
+input::placeholder{
+    color:#ffffff;
+}
+
+.form-container form{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   flex-direction: column;
+}
+
+form div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 0.5rem;
+}
+
+
+

@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400&family=Quicksand:wght@500&display=swap');
+:root{
+    --main-spacing : 0.1rem;
+    --main-white:#ffffff;
+    --main-black:#555;
+    --primary-color: rgb(120, 120, 250);
+    --shadow:rgba(90, 90, 255, 0.26);
+}
+
+*{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+
+a{
+    text-decoration: none;
+    color:var(--main-black);
+}
+body{
+    overflow-x: hidden;
+}
+
+/*showcase start*/
+.showcase{
+    width: 100vw;
+    height:100vh;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    padding-right: 1rem;
+    width: 100vw;
+    background:#333;
+    position: fixed;
+    top: 0;  
+    height: 8rem; 
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-items: center;
+    align-items: center; 
+    box-shadow: 2px 2px 10px rgba(83, 83, 83, 0.555);
+}
+#logo{
+    font-family:'Quicksand';
+    font-size: 3rem;
+    font-weight:bold;
+    color: #eee;
+    display: block;
+    text-transform: lowercase;
+}
+.nav-link{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color:#fff;
+    font-weight: bold;
+    padding:2.4rem 0.5rem;
+}
+#login-link{
+    font-size:1.8rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    background: rgb(120, 120, 250);
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem;
+}
+
+#site-search{
+    padding: 0 1rem;
+    width:60rem;
+    height: 5rem;
+    outline: none;
+    border: none;
+    background: rgb(120, 120, 250);
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 0.8rem;
+}
+#site-search:focus{
+    color: rgb(120, 120, 250);
+    background: #fff;
+}
+#site-search::placeholder{
+    color:#fff;
+}
+
+.hero-img{
+    width: 65rem;
+    height: 65rem;
+}
+
+.logo-container{
+    position: absolute;
+    top:0;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.showcase .logo{
+    font-family: 'Baloo 2';
+    font-size: 3rem;
+    font-weight:bold;
+    text-transform:lowercase;
+    color:#666;
+}
+
+.btn-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.tag-line{
+    font-size: 6rem;
+    font-weight: bolder;
+    color: rgb(120, 120, 250);
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*showcase end*/
+
+#whyUsSection > .content-wrapper > .main-content{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    row-gap:1rem;
+}
+
+.content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.icon-box>span{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.content-box .icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(120, 120, 250);
+    color: #fff;
+}
+
+.content-wrapper .img-container>img{
+    width: 40rem;
+    height: 40rem;
+}
+/*aboutus*/
+#aboutUs{
+    background: rgb(120, 120, 250);
+}
+
+#aboutUs > .content-wrapper > .main-content{
+    background: #fff;
+}
+
+#aboutUs .content-wrapper>.img-container>img{
+    width: 60rem;
+    height: 50rem;
+}
+/*aboutus-end*/
+
+/*contactus*/
+#contactUs>.img-container>img{
+    width: 40rem;
+    height: 40rem;
+}
+
+#contact-form{
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+}
+
+.form-field{
+    display: block;
+    width: 100%;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 2rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: rgb(120, 120, 250);
+    border-radius:1rem;
+    margin-bottom:2rem ;
+}
+
+.form-field::placeholder{
+    color: #fff;
+}
+
+.text-area{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: rgb(120, 120, 250);
+    border-radius:1rem;
+    padding: 2rem;
+}
+
+.text-area::placeholder{
+    color: #fff;
+}
+
+.social-media-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media-links img{
+    width: 5rem;
+    cursor: pointer;
+}
+
+
+
+/*contactus-end*/
+
+.footer{
+    background: #222;
+    width: 100vw;
+    height: 50vh;
+}
+
+
+/*shapes and icons*/
+.left-arrow{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid var(--secondary-color);
+    border-radius: 0.1rem;
+    transform: rotate(45deg);
+    border-top: none;
+    border-right: none;   
+}
+
+.right-arrow{
+    display: inline-block;
+    width:1rem;
+    height:1rem;
+    border: 0.5rem solid var(--main-black);
+    border-radius:0.3rem;
+    transform: rotate(45deg);
+    border-bottom: none;
+    border-left: none;
+}
+/*icons-end*/
+
+/*utility classes*/
+
+.section-heading{
+    padding:0 1rem;
+}
+
+.section-heading>h1{
+    font-size: 5rem;
+    color: rgb(120, 120, 250);
+}
+
+.main-content{
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem;
+}
+.main-content .content-box{
+    padding:0 1rem;
+    border-radius: 1rem;
+    display:grid;
+    grid-template-columns:1fr 3fr;
+    align-items: center;
+}
+
+.text-box{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.text{
+    font-size: 3rem;
+    font-family: 'Quicksand';
+    font-weight: bolder;
+    color: rgb(120, 120, 250);
+}
+
+.btn{
+    margin: 1rem 0;
+    width:35rem;
+    color:#ffffff;
+    background: rgb(120, 120, 250);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 3.5rem;
+    padding: 1.5rem;
+    font-family: 'Baloo 2';
+    font-weight: bolder;
+    text-transform: capitalize;
+    border-radius: 0.8rem;
+    transition: 0.5s;
+}
+.btn:hover{
+    box-shadow: 5px 5px 15px rgba(120, 120, 250, 0.555);
+}
+
+.active{
+    border-bottom: 4px solid rgb(120, 120, 250);
+}
+
+.circle{
+    width:8rem;
+    height:8rem;
+    border-radius: 50%;
+}
+
+.container{
+    padding: 0 2rem;
+    width:100vw;
+    height:90vh;
+    display: grid;
+    align-items: center;
+}
+/*utility classes end*/
+
+
+
+
