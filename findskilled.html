@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Skilled Proffessionals</title>
     <link rel="stylesheet" href="./find.css">
+    <script src="https://www.w3schools.com/appml/2.0.3/appml.js"></script>
 </head>
 <body>
     <div class="main-container">
@@ -20,24 +21,14 @@
         <div class="hero">
             <div class="wrapper">
                     <div>
-                        <input id="city-field" type="text" placeholder="City">
+                        <input id="select-city" type="text" placeholder="City">
                     </div>
-                <div>
-                    <input type="search" name="main-search" id="main-search" placeholder="Search for a service">
-                </div>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card">
-                <span class="card-components" id="worker-img"></span>
-                <div id="worker-contact-and-ratings" class="card-components">
-                    <span class="circle" id="worker-whatsapp-link"></span>
-                    <span class="circle" id="worker-contact"></span>
-                    <span class="circle" id="worker-ratings">4.5</span>
-                </div>
-                <span class="card-components" id="worker-name">Ram Kumar</span>
-                <span class="card-components" id="worker-service">Electrician</span>
-                <span class="card-components" id="view-profile-btn" class="btn">View Profile</span>
+                    <div>
+                        <input type="search" name="main-search" id="main-search" placeholder="Electrician,Plumber,Carpenter,etc,.">
+                    </div>
+                    <div>
+                        <span id="main-search-btn">Search</span>
+                    </div>
             </div>
         </div>
         <footer class="footer">
